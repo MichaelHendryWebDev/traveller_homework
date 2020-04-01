@@ -3,8 +3,20 @@ const Traveller = function(journeys) {
 };
 
 Traveller.prototype.getJourneyStartLocations = function() {
-
+  return this.journeys.map((journey) => {
+    return journey.startLocation;
+  });
 };
+
+// Cinema.prototype.filmTitles = function () {
+//   return this.films.map((film) => {
+//     return film.title;
+//   });
+// };
+
+
+
+
 
 Traveller.prototype.getJourneyEndLocations = function () {
 
