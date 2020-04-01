@@ -8,18 +8,12 @@ Traveller.prototype.getJourneyStartLocations = function() {
   });
 };
 
-// Cinema.prototype.filmTitles = function () {
-//   return this.films.map((film) => {
-//     return film.title;
-//   });
-// };
-
-
-
 
 
 Traveller.prototype.getJourneyEndLocations = function () {
-
+  return this.journeys.map((journey) => {
+    return journey.endLocation;
+  });
 };
 
 Traveller.prototype.getJourneysByTransport = function (transport) {
